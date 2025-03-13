@@ -6,11 +6,11 @@ test_url = "https://www.google.com"
 
 class TextType(Enum):
     normal_text = "normal"
-    text_bold = "bold"
-    text_italic = "italic"
-    text_code = "code"
-    text_link = "link"
-    text_image = "image"
+    BOLD = "BOLD"
+    ITALIC = "ITALIC"
+    CODE = "CODE"
+    LINK = "LINK"
+    IMAGE = "IMAGE"
 
 class TextNode():
     def __init__(self, text, text_type, url=None):
