@@ -67,7 +67,7 @@ def text_node_to_html_node(text_node):
         return LeafNode(tag="b", value=text_node.text)
     
     elif text_node.text_type == TextType.NORMAL_TEXT:
-        return LeafNode(tag=None, value=text_node.)
+        return LeafNode(tag=None, value=text_node.text)
     
     elif text_node.text_type == TextType.ITALIC_TEXT:
         return LeafNode(tag="i", value=text_node.text)
